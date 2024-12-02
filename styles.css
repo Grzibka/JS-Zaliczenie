@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+  }
+  
+  .calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header button:hover {
+    background-color: #cb0000;
+  }
+  
+  .days, .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+  }
+  
+  .days div {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .dates div {
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dates div:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .dates .today {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .dates .has-event {
+    position: relative;
+  }
+  
+  .dates .has-event span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgb(255, 255, 0);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .modal-content input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .modal-content button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #b30000;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .quote {
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .event-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .event-list h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+  
+  .event-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .event-list ul li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event-list ul li button:hover {
+    background-color: #cc0000;
+  }
+  
